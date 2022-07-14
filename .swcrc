@@ -1,0 +1,13 @@
+{
+    "jsc": {
+      "parser": {
+        "syntax": "typescript"
+      },
+      "target":"es2020"
+    },
+    "env": {
+      "targets": {
+        "node": 16
+      }
+    }
+}

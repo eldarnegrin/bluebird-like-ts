@@ -1,0 +1,34 @@
+{
+  "name": "@eldarnegrin/bluebird-like-ts",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run type-check && swc src -d dist",
+    "build-dev": "npm run build && node -r dotenv/config dist/index.js",
+    "dev": "nodemon",
+    "type-check": "tsc --noEmit true",
+    "start": "NODE_ENV=production node -r dotenv/config dist/index.js",
+    "test": "jest",
+    "emit-d": "tsc --declaration --emitDeclarationOnly --noEmit false"
+  },
+  "keywords": [],
+  "author": "eldarnegrin",
+  "types": "./typings",
+  "license": "ISC",
+  "dependencies": {
+    "@ajar/marker": "^1.3.3"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.213",
+    "@swc/jest": "^0.2.21",
+    "@types/jest": "^28.1.5",
+    "@types/node": "^18.0.4",
+    "dotenv": "^16.0.1",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
+  }
+}

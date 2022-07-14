@@ -1,0 +1,8 @@
+export { delay, echo, random } from './promise.utils'
+export { all } from './promise.all'
+export { props } from './promise.props'
+export { each } from './promise.each'
+export { mapParallel, mapSeries } from './promise.map'
+export { filterParallel, filterSeries } from './promise.filter'
+export { reduce } from './promise.reduce'
+export { race, some } from './promise.race'
